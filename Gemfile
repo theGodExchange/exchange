@@ -7,7 +7,7 @@ gem 'rails', '3.0.9'
 
 gem 'sqlite3'
 gem 'thin'
-#gem 'jruby-openssl'
+gem 'jruby-openssl'
 gem 'rest-client'
 gem 'jquery-rails'
 gem 'typhoeus'
@@ -18,13 +18,13 @@ gem 'remit'
 gem 'hoptoad_notifier'
 gem 'awesome_print'
 gem 'savon'
-#gem 'searchlogic'
+gem 'searchlogic'
 gem 'rd_searchlogic', :require => 'searchlogic', :git => 'git://github.com/railsdog/searchlogic.git'
 # Use unicorn as the web server
-# gem 'unicorn'
+ gem 'unicorn'
 
 # Deploy with Capistrano
-# gem 'capistrano'
+ gem 'capistrano'
 
 # To use debugger (ruby-debug for Ruby 1.8.7+, ruby-debug19 for Ruby 1.9.2+)
 # gem 'ruby-debug'
@@ -39,6 +39,6 @@ gem 'rd_searchlogic', :require => 'searchlogic', :git => 'git://github.com/rails
 # Bundle gems for the local environment. Make sure to
 # put test-only gems in this group so their generators
 # and rake tasks are available in development mode:
-# group :development, :test do
-#   gem 'webrat'
-# end
+ group :development, :test do
+   gem 'webrat'
+ end
